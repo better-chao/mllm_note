@@ -1,0 +1,6 @@
+* [首页](/)
+* [01.mllm论文](/01.mllm论文/)
+  * [0.从视觉表征到多模态大模型](/02.mllm论文/0.从视觉表征到多模态大模型.md)
+  * [1.Qwen VL](/01.mllm论文/1.qwen_vl.md)
+* [02.finetune](/02.finetune/)
+  * [1.基于LoRA微调多模态大模型](02.finetune/1.基于LoRA微调多模态大模型.md)
