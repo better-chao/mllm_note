@@ -1,7 +1,7 @@
 
 # qwen vl
 
-代码链接：[Qwen-VL: A Versatile Vision-Language Model for Understanding, Localization, Text Reading, and Beyond (arxiv.org)](https://github.com/QwenLM/Qwen-VL "Qwen-VL: A Versatile Vision-Language Model for Understanding, Localization, Text Reading, and Beyond")
+代码链接：[Qwen-VL: A Versatile Vision-Language Model for Understanding, Localization, Text Reading, and Beyond](https://github.com/QwenLM/Qwen-VL "Qwen-VL: A Versatile Vision-Language Model for Understanding, Localization, Text Reading, and Beyond")
 ## 👤 User
 
 分析一下qween vl的主要架构,训练数据,训练loss,评估的任务指标,另外结合这个论文的项目代码给出分析
