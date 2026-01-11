@@ -99,6 +99,44 @@ Qwen-VL采用**三组件架构**,总参数量为**9.6B**:
 | In-house Data | 220M | 220M | 100% | 中文 |
 | **总计** | **5B** | **1.4B** | **28%** | 77.3%英文/22.7%中文 |
 
+根据论文内容,**Qwen-VL第一阶段的预训练任务是Image Captioning(图像描述生成)**,而不是VQA。
+
+
+##### 第一阶段预训练任务详解
+
+###### 核心任务: **Image Captioning**
+
+**训练数据**(论文3.1节):
+```
+任务类型: 图文对(Image-Text Pairs)
+数据来源: 网络爬取的弱标注数据
+数据规模: 1.4B样本(清洗后)
+```
+
+**具体数据集**:
+| 数据集 | 原始量 | 清洗后 | 语言 |
+|--------|--------|--------|------|
+| LAION-en | 2B | 280M | 英文 |
+| LAION-COCO | 600M | 300M | 英文 |
+| DataComp | 1.4B | 300M | 英文 |
+| Coyo | 700M | 200M | 英文 |
+| CC12M/3M | 15M | 11M | 英文 |
+| SBU | 1M | 0.8M | 英文 |
+| COCO Caption | 0.6M | 0.6M | 英文 |
+| LAION-zh | 108M | 105M | 中文 |
+| In-house Data | 220M | 220M | 中文 |
+
+###### 数据格式示例
+
+```
+输入序列:
+<img>[256个图像token]</img>Generate the caption in English:
+
+目标序列(计算loss):
+A woman and her dog playing on the beach.<eos>
+└──────────────── 仅对caption文本计算loss ────────────────┘
+```
+
 #### **Stage 2: 多任务预训练**
 
 7大任务并行训练:
