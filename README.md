@@ -8,7 +8,7 @@
 
 ## 注意：
 
-本项目是在[MLLMs Interview Note](http://wdndev.github.io/mllm_interview_note)的基础上进行删减和补充，目前大部分基础内容来自于该项目，再次非常感谢原作者的分享~，后续后不断地在这个基础上进行补充和添加细节，大家有好的意见也欢迎补充。
+本项目是在[MLLMs Interview Note](https://github.com/wdndev/mllm_interview_note)的基础上进行删减和补充，目前大部分基础内容来自于该项目，再次非常感谢原作者的分享~，后续后不断地在这个基础上进行补充和添加细节，大家有好的意见也欢迎补充。
 
 ## 目录
 
