@@ -428,7 +428,7 @@ Stage 1: 基础预训练 (Visual-Text Alignment)
     ↓ (600B tokens)
 Stage 2: 增强预训练 (Mixed Content Learning)
     ↓ (+800B tokens)
-Stage 3: 后训练 (Instruction Tuning + RLHF)
+Stage 3: 后训练 (Instruction Tuning)
 ```
 
 ### 5.2 Stage 1: 基础预训练阶段
@@ -514,10 +514,6 @@ Stage 3: 后训练 (Instruction Tuning + RLHF)
 2. 从强大模型（如GPT-4V）蒸馏的数据
 3. 特定任务的指令数据（VQA、Grounding等）
 4. 多轮对话数据
-
-**Reinforcement Learning from Human Feedback (RLHF)**:
-
-可能采用了RLHF进一步优化模型的响应质量，使其更符合人类偏好。
 
 ### 5.5 多模态训练基础设施（Section 2.3）
 
